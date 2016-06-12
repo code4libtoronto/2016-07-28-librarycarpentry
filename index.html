@@ -13,7 +13,7 @@ enddate: 2016-07-29        # use YYYY-MM-DD format like 2015-01-02
 instructor: ["Kim Pham", "Leanne Trimble", "Greg Wilson", "Nich Worby", "Thomas Guignard"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["Nancy Fong", "Leslie Barnes", "Sean Zhao", "Stephanie Pegg", "Andy Wagner"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 contact: "kim.pham@utoronto.ca"      # contact email address for workshop organizer, such as "grace@hopper.org"
-etherpad:         # optional (insert the URL for your Etherpad if you're using one)
+etherpad: http://pad.software-carpentry.org/2016-07-28-librarycarpentry         # optional (insert the URL for your Etherpad if you're using one)
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 ---
 
@@ -67,19 +67,17 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   <a href="{{site.swc_site}}">Software Carpentry</a>'s mission
   is to help scientists and engineers get more research done in less
   time and with less pain by teaching them basic lab skills for
-  scientific computing.  Library Carpentry is a hands-on workshop will cover basic
-  concepts and tools, including program design, version control, data
-  management, and task automation.  Participants will be encouraged to
+  scientific computing.  Library Carpentry offers comparable training to help librarians, archivists, museums and information professionals gain computing skills relevant to their profession.  Participants will be encouraged to
   help one another and to apply what they have learned to their own
   problems sets.
 </p>
-<p align="center">
+<!-- <p align="center">
   <em>
     For more information on what we teach and why,
     please see our paper
     "<a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Best Practices for Scientific Computing</a>".
   </em>
-</p>
+</p> -->
 
 <!--
   AUDIENCE
@@ -185,19 +183,19 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 <h2 id="schedule">Schedule</h2>
 
 <!-- DO NOT EDIT SURVEY LINKS -->
-<p><em>Surveys</em></p>
+<!-- <p><em>Surveys</em></p>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
 <p><a href='{{ site.swc_pre_survey }}{{ site.github.project_title }}'>Pre-workshop Survey</a></p>
 <p><a href='{{ site.swc_post_survey }}{{ site.github.project_title }}'>Post-workshop Survey</a></p>
-
+ -->
 <div class="row">
   <div class="col-md-6">
     <h3>July 28</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Regular Expressions</td> </tr>
-      <tr> <td>10:30</td> <td>XQuery / XPath / Online tools</td> </tr>
+      <tr> <td>09:00</td>  <td>Regular Expressions (Regex)</td> </tr>
+      <tr> <td>10:30</td> <td>XQuery / XPath</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Open Refine and JSON</td> </tr>
+      <tr> <td>13:00</td>  <td>Introduction to Open Refine</td> </tr>
       <tr> <td>14:30</td>  <td>Coffee</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
@@ -206,10 +204,10 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
     <h3>July 29</h3>
     <table class="table table-striped">
       <tr> <td>09:00</td>  <td>Intro to Python</td> </tr>
-      <tr> <td>10:30</td>  <td>APIs</td> </tr>
+      <tr> <td>10:30</td>  <td>Python and APIs</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>More APIsL</td> </tr>
-      <tr> <td>14:00</td>  <td>Python II Scrapy / Xpath</td> </tr>
+      <tr> <td>13:00</td>  <td>Python II, More APIs: Scrapy</td> </tr>
+      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
   </div>
@@ -260,7 +258,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 
 <div class="row">
   <div class="col-md-6">
-    <h3 id="syllabus-shell">The Unix Shell</h3>
+    <h3 id="syllabus-regex">Regex</h3>
     <ul>
       <li>Files and directories</li>
       <li>History and tab completion</li>
@@ -271,6 +269,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <li><a href="{{site.swc_githubio}}/shell-novice/reference.html">Reference...</a></li>
     </ul>
   </div>
+
   <div class="col-md-6">
     <h3 id="syllabus-python">Programming in Python</h3>
     <ul>
@@ -284,9 +283,9 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <li><a href="{{site.swc_githubio}}/python-novice-inflammation/reference.html">Reference...</a></li>
     </ul>
   </div>
-  <!--
+
   <div class="col-md-6">
-    <h3 id="syllabus-r">Programming in R</h3>
+    <h3 id="syllabus-openrefine">Introduction to OpenRefine</h3>
     <ul>
       <li>Working with vectors and data frames</li>
       <li>Reading and plotting data</li>
@@ -296,7 +295,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <li><a href="{{site.swc_githubio}}/r-novice-inflammation/reference.html">Reference...</a></li>
     </ul>
   </div>
-  -->
+
   <!--
   <div class="col-md-6">
     <h3 id="syllabus-matlab">Programming in MATLAB</h3>
@@ -314,7 +313,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 
 <div class="row">
   <div class="col-md-6">
-    <h3 id="syllabus-git">Version Control with Git</h3>
+    <h3 id="syllabus-xpathxquery">XPath / XQuery</h3>
     <ul>
       <li>Creating a repository</li>
       <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
@@ -328,7 +327,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
     </ul>
   </div>
   <div class="col-md-6">
-    <h3 id="syllabus-sql">Managing Data with SQL</h3>
+    <h3 id="syllabus-pythonii">Python II: Scrapy API</h3>
     <ul>
       <li>Reading and sorting data</li>
       <li>Filtering with <code>where</code></li>
@@ -371,7 +370,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 </p>
 
 <div id="shell"> <!-- Start of 'shell' section. -->
-  <h3>The Bash Shell</h3>
+  <h3>Regular Expressions (Regex)</h3>
 
   <p>
     Bash is a commonly-used shell that gives you the power to do simple
@@ -467,7 +466,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 
 <div id='git'> <!-- Start of 'Git' section. GitHub browser compatability
            is given at https://help.github.com/articles/supported-browsers/-->
-  <h3>Git</h3>
+  <h3>BaseX for XPath / XQuery</h3>
   <p>
     Git is a version control system that lets you track who made changes
     to what when and has options for easily updating a shared or public
@@ -673,7 +672,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 </div> <!-- End of 'Python' section. -->
 
 <div id="r"> <!-- Start of 'R' section. -->
-  <h3>R</h3>
+  <h3>OpenRefine</h3>
 
   <p>
     <a href="http://www.r-project.org">R</a> is a programming language
@@ -718,43 +717,6 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
     </div>
   </div>
 </div> <!-- End of 'R' section. -->
-
-<div id="sql"> <!-- Start of 'SQLite' section. -->
-  <h3>SQLite</h3>
-
-  <p>
-    SQL is a specialized programming language used with databases.  We
-    use a simple database manager called
-    <a href="http://www.sqlite.org/">SQLite</a> in our lessons.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="sql-windows">Windows</h4>
-      <p>
-        The <a href="{{site.swc_github}}/windows-installer">Software Carpentry Windows Installer</a>
-        installs SQLite for Windows.
-        If you used the installer to configure nano, you don't need to run it again.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="sql-macosx">Mac OS X</h4>
-      <p>
-        SQLite comes pre-installed on Mac OS X.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="sql-linux">Linux</h4>
-      <p>
-        SQLite comes pre-installed on Linux.
-      </p>
-    </div>
-  </div>
-
-  <p><strong>If you installed Anaconda, it also has a copy of SQLite
-    <a href="https://github.com/ContinuumIO/anaconda-issues/issues/307">without support to <code>readline</code></a>.
-    Instructors will provide a workaround for it if needed.</strong></p>
-</div> <!-- End of 'SQLite' section. -->
 
 <!--
   Uncomment this section if you are using our virtual machine.
