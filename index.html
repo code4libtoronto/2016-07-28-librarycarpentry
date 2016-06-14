@@ -206,7 +206,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <tr> <td>09:00</td>  <td>Intro to Python</td> </tr>
       <tr> <td>10:30</td>  <td>Python and APIs</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Python II, More APIs: Scrapy</td> </tr>
+      <tr> <td>13:00</td>  <td>Python II: Web scraping with Scrapy</td> </tr>
       <tr> <td>14:30</td>  <td>Coffee</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
@@ -327,17 +327,14 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
     </ul>
   </div>
   <div class="col-md-6">
-    <h3 id="syllabus-pythonii">Python II: Scrapy API</h3>
+    <h3 id="syllabus-pythonii">Python II: Web scraping with Scrapy</h3>
     <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="{{site.swc_githubio}}/sql-novice-survey/reference.html">Reference...</a></li>
+      <li>What is web scraping and why it is useful</li>
+	  <li>Creating a Scrapy project</li>
+	  <li>Defining what items to extract using Xpath</li>
+	  <li>Writing a spider to crawl a website</li>
+	  <li>Store and reuse extracted items</li>
+	  <li>Do's and Don'ts of web scraping</li>
     </ul>
   </div>
 </div>
@@ -625,6 +622,61 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   </p>
 -->
 </div> <!-- End of 'Python' section. -->
+
+<div id='scrapy'> <!-- Start of 'Git' section. GitHub browser compatability
+           is given at https://help.github.com/articles/supported-browsers/-->
+  <h3>Scrapy</h3>
+  <p>
+         In this part of the workshop, we will use the <a href="http://scrapy.org">Scrapy</a> Python framework 
+		 to get started with web scraping. Please note that Scrapy requires Python 2.7, Python 3.3 or higher.
+		 Refer to the <a href="#python">section on installing Python</a> for details on how to do this.
+  </p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="git-windows">Windows</h4>
+      <p>
+            If you installed Python using Anaconda as <a href="#python">recommended above</a>, do the following:
+			<ol>
+				<li>Open the Anaconda command line tool (or a shell such as GitBash)</li>
+				<li>Run <code>conda install -c scrapinghub scrapy</code>
+			</ol>
+      </p>
+	  <p>If you have another install of Python, you should be able to use the pip package manager to install Scrapy:
+		  <code>pip install Scrapy</code>. If you run into issues, refer to the <a href="http://doc.scrapy.org/en/latest/intro/install.html#intro-install">official Scrapy install guide</a> or get in touch
+		  with <a href="mailto:tom@timtom.ca">Thomas</a> (@timtomch).
+	  </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="git-macosx">Mac OS X</h4>
+       <p>
+             If you installed Python using Anaconda as <a href="#python">recommended above</a>, do the following:
+ 			<ol>
+ 				<li>Open a new Terminal session</li>
+ 				<li>Run <code>conda install scrapy</code>
+ 			</ol>
+       </p>
+ 	  <p>If you have another install of Python, you should be able to use the pip package manager to install Scrapy:
+ 		  <code>pip install Scrapy</code>. If you run into issues, refer to the <a href="http://doc.scrapy.org/en/latest/intro/install.html#intro-install">official Scrapy install guide</a> or get in touch
+ 		  with <a href="mailto:tom@timtom.ca">Thomas</a> (@timtomch).
+ 	  </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="git-linux">Linux</h4>
+       <p>
+             If you installed Python using Anaconda as <a href="#python">recommended above</a>, do the following:
+ 			<ol>
+ 				<li>Open a new shell</li>
+ 				<li>Run <code>conda install scrapy</code>
+ 			</ol>
+       </p>
+ 	  <p>If you have another install of Python, you should be able to use the pip package manager to install Scrapy:
+ 		  <code>pip install Scrapy</code>. If you run into issues, refer to the <a href="http://doc.scrapy.org/en/latest/intro/install.html#intro-install">official Scrapy install guide</a> or get in touch
+ 		  with <a href="mailto:tom@timtom.ca">Thomas</a> (@timtomch).
+ 	  </p>
+    </div>
+  </div>
+</div> <!-- End of 'Git' section. -->
 
 
 <!--
