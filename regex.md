@@ -1,8 +1,9 @@
 ---
-layout: page
-title: Software/Library Carpentry - July 28, 2016
-subtitle: Regular Expressions
----
+Software/Library Carpentry - July 28-29, 2016
+___
+
+#Regular Expressions
+
 ## Introduction
 
 *   A regular expression, or regex, is just a pattern that a string can match
