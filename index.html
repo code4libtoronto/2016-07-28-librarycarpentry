@@ -209,7 +209,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <tr> <td>10:15</td>  <td>Break</td> </tr>
       <tr> <td>10:30</td>  <td>Python and APIs</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Python II: Web scraping with Scrapy</td> </tr>
+      <tr> <td>13:00</td>  <td>Introduction to Web scraping</td> </tr>
       <tr> <td>14:30</td>  <td>Coffee</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
@@ -325,12 +325,12 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
     </ul>
   </div>
   <div class="col-md-6">
-    <h3 id="syllabus-pythonii">Python II: Web scraping with Scrapy</h3>
+    <h3 id="syllabus-webscraping">Introduction to Web scraping</h3>
     <ul>
       <li>What is web scraping and why it is useful</li>
-	  <li>Creating a Scrapy project</li>
-	  <li>Defining what items to extract using Xpath</li>
-	  <li>Writing a spider to crawl a website</li>
+	  <li>Scraping manually using browser extensions</li>
+	  <li>Defining what items to extract using XPath</li>
+	  <li>Writing scrapers to crawl a website</li>
 	  <li>Store and reuse extracted items</li>
 	  <li>Do's and Don'ts of web scraping</li>
     </ul>
@@ -627,14 +627,25 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
            is given at https://help.github.com/articles/supported-browsers/-->
   <h3>Scrapy</h3>
   <p>
-         In this part of the workshop, we will use the <a href="http://scrapy.org">Scrapy</a> Python framework
-		 to get started with web scraping. Please note that Scrapy requires Python 2.7, Python 3.3 or higher.
-		 Refer to the <a href="#python">section on installing Python</a> for details on how to do this.
+        In the first part of the Scrapy lesson, we will use a Chrome browser extension to get started with web scraping.
+		Please ensure you have a working copy of the Chrome browser, as well as the 
+		<a href="https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd">Scraper extension</a>.
+		We will also use OpenRefine to clean up extracted data.
+  </p>
+  <p>
+		In the second part of the lesson, we will use the Scrapy framework to build a web scraper in Python. This requires
+		a working installation of Python, please refer to the <a href="#python">section on installing Python</a> for details.		 
   </p>
 
   <div class="row">
     <div class="col-md-4">
       <h4 id="git-windows">Windows</h4>
+	 <p>Make sure you have a working copy of <a href="https://www.google.com/chrome/browser/desktop/index.html">the Google Chrome
+		browser</a> on your machine. Install the <a href="https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd">
+		Scraper</a> extension.
+	</p>
+
+
       <p>
             If you installed Python using Anaconda as <a href="#python">recommended above</a>, do the following:
 			<ol>
@@ -649,7 +660,12 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
     </div>
     <div class="col-md-4">
       <h4 id="git-macosx">Mac OS X</h4>
-       <p>
+	 <p>Make sure you have a working copy of <a href="https://www.google.com/chrome/browser/desktop/index.html">the Google Chrome
+		browser</a> on your machine. Install the <a href="https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd">
+		Scraper</a> extension.
+	</p>       
+
+<p>
              If you installed Python using Anaconda as <a href="#python">recommended above</a>, do the following:
  			<ol>
  				<li>Open a new Terminal session</li>
@@ -663,6 +679,11 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
     </div>
     <div class="col-md-4">
       <h4 id="git-linux">Linux</h4>
+
+	 <p>Make sure you have a working copy of <a href="https://www.google.com/chrome/browser/desktop/index.html">the Google Chrome
+		browser</a> on your machine. Install the <a href="https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd">
+		Scraper</a> extension.
+	</p>
        <p>
              If you installed Python using Anaconda as <a href="#python">recommended above</a>, do the following:
  			<ol>
