@@ -365,6 +365,101 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 </p>
 
 <div id="shell"> <!-- Start of 'shell' section. -->
+  <h3>The Bash Shell</h3>
+
+  <p>
+    Bash is a commonly-used shell that gives you the power to do simple
+    tasks more quickly.
+  </p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="shell-windows">Windows</h4>
+      <a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a>
+      <ol>
+        <li>Download the Git for Windows <a href="https://git-for-windows.github.io/">installer</a>.</li>
+        <li>Run the installer and follow the steps bellow:
+          <ol>
+            <!-- Git 2.6.1 Setup -->
+            <!-- Welcome to the Git Setup Wizard -->
+            <li>Click on "Next".</li>
+            <!-- Information -->
+            <li>Click on "Next".</li>
+            <!-- Select Destination Location -->
+            <li>Click on "Next".</li>
+            <!-- Select Components -->
+            <li>Click on "Next".</li>
+            <!-- Select Start Menu Folder -->
+            <li>Click on "Next".</li>
+            <!-- Adjusting your PATH environment -->
+            <li>
+              <strong>
+                Select "Use Git from the Windows Command Prompt" and click on "Next".
+              </strong>
+                If you forgot to do this programs that you need for the workshop will not work properly.
+                If this happens rerun the installer and select the appropriate option.
+            </li>
+            <!-- Configuring the line ending conversions -->
+            <li>
+              Click on "Next".
+              <strong>
+                Keep "Checkout Windows-style, commit Unix-style line endings" selected.
+              </strong>
+            </li>
+            <!-- Configuring the terminal emulator to use with Git Bash -->
+            <li>
+              <strong>
+                Select "Use Windows' default console window" and click on "Next".
+              </strong>
+            </li>
+            <!-- Configuring experimental performance tweaks -->
+            <li>Click on "Next".</li>
+            <!-- Installing -->
+            <!-- Completing the Git Setup Wizard -->
+            <li>Click on "Finish".</li>
+          </ol>
+        </li>
+        <li>
+          If your "HOME" environment variable is not set (or you don't know what this is):
+          <ol>
+            <li>Open command prompt (Open Start Menu then type <code>cmd</code> and press [Enter])</li>
+            <li>
+              Type the following line into the command prompt window exactly as shown:
+              <p><code>setx HOME "%USERPROFILE%"</code></p>
+            </li>
+            <li>Press [Enter], you should see <code>SUCCESS: Specified value was saved.</code></li>
+            <li>Quit command prompt by typing <code>exit</code> then pressing [Enter]</li>
+          </ol>
+        </li>
+      </ol>
+      <p>This will provide you with both Git and Bash in the Git Bash program.</p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="shell-macosx">Mac OS X</h4>
+      <p>
+        The default shell in all versions of Mac OS X is Bash, so no
+        need to install anything.  You access Bash from the Terminal
+        (found in
+        <code>/Applications/Utilities</code>).
+        See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
+        for an example on how to open the Terminal.
+        You may want to keep
+        Terminal in your dock for this workshop.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="shell-linux">Linux</h4>
+      <p>
+        The default shell is usually Bash, but if your
+        machine is set up differently you can run it by opening a
+        terminal and typing <code>bash</code>.  There is no need to
+        install anything.
+      </p>
+    </div>
+  </div>
+</div> <!-- End of 'shell' section. -->
+
+<div id="regex"> <!-- Start of 'regex' section. -->
   <h3>Regular Expressions (Regex)</h3>
 
   <p>
@@ -391,11 +486,10 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       </p>
     </div>
   </div>
-</div> <!-- End of 'shell' section. -->
+</div> <!-- End of 'regex' section. -->
 
 
-<div id='git'> <!-- Start of 'Git' section. GitHub browser compatability
-           is given at https://help.github.com/articles/supported-browsers/-->
+<div id='xpath'> <!-- Start of 'Xpath' section. -->
 <!-- Update when have XPath / XQuery installation instructions  -->
 <h3>BaseX for XPath / XQuery</h3>
   <p>
@@ -423,7 +517,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
             A Linux distribution is available here: https://tracker.debian.org/pkg/basex
       </p>
     </div>
-  </div> <!-- End of 'Git' section. -->
+  </div> <!-- End of 'Xpath' section. -->
 
 <!-- <div id="r">  -->
 <!-- Start of 'R' section. -->
@@ -623,11 +717,10 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 -->
 </div> <!-- End of 'Python' section. -->
 
-<div id='scrapy'> <!-- Start of 'Git' section. GitHub browser compatability
-           is given at https://help.github.com/articles/supported-browsers/-->
+<div id='scrapy'> <!-- Start of 'Scrapy' section. -->
   <h3>Scrapy</h3>
   <p>
-        In the first part of the Scrapy lesson, we will use a Chrome browser extension to get started with web scraping.
+        In the first part of the Web scraping lesson, we will use a Chrome browser extension to get started with web scraping.
 		Please ensure you have a working copy of the Chrome browser, as well as the 
 		<a href="https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd">Scraper extension</a>.
 		We will also use OpenRefine to clean up extracted data.
@@ -643,6 +736,12 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 	 <p>Make sure you have a working copy of <a href="https://www.google.com/chrome/browser/desktop/index.html">the Google Chrome
 		browser</a> on your machine. Install the <a href="https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd">
 		Scraper</a> extension.
+	</p>
+
+	<p>
+		We will also need a command-line tool to run Scrapy. See the <a href="#shell">section on installing GitBash</a> 
+		if you haven't done so already.
+		If you already have another shell installed, such as <a href="https://cygwin.com/install.html">Cygwin</a>, this should be fine too.
 	</p>
 
 
