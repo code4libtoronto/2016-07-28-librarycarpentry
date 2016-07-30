@@ -3,17 +3,17 @@ layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS.
 venue: "Toronto - Library Carpentry"        # brief name of host site without address (e.g., "Euphoric State University")
 address: "University of Toronto Robarts Library - 4th Floor - Blackburn Room"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
-country: "Canada"      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: "EN"     # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
+country: "ca"      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: "en"     # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "43.664439, -79.3996661"       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
 humandate: "Jul 28-29, 2016"    # human-readable date (e.g., "Feb 17-18, 2020")
 humantime: "9:00 am - 4:00 pm"    # human-readable time (e.g., "9:00 am - 4:30 pm")
 startdate: 2016-07-28      # use YYYY-MM-DD format like 2015-01-01
 enddate: 2016-07-29        # use YYYY-MM-DD format like 2015-01-02
 instructor: ["Kim Pham", "Leanne Trimble", "Greg Wilson", "Nich Worby", "Thomas Guignard"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Nancy Fong", "Leslie Barnes", "Sean Zhao", "Stephanie Pegg", "Andy Wagner"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+helper: ["Nancy Fong", "Leslie Barnes", "Bella Ban", "Sean Zhao", "Stephanie Pegg", "Andy Wagner"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 contact: "kim.pham@utoronto.ca"      # contact email address for workshop organizer, such as "grace@hopper.org"
-etherpad: http://pad.software-carpentry.org/2016-07-28-librarycarpentry         # optional (insert the URL for your Etherpad if you're using one)
+etherpad: http://pad.software-carpentry.org/2016-07-2829-librarycarpentry         # optional (insert the URL for your Etherpad if you're using one)
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 ---
 
@@ -192,7 +192,9 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   <div class="col-md-6">
     <h3>July 28</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Regular Expressions (Regex)</td> </tr>
+      <tr> <td>09:00</td>  <td>Welcome & Introduction</td> </tr>
+      <tr> <td>09:15</td>  <td>Regular Expressions (Regex)</td> </tr>
+      <tr> <td>10:15</td>  <td>Break</td> </tr>
       <tr> <td>10:30</td> <td>XQuery / XPath</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
       <tr> <td>13:00</td>  <td>Introduction to Open Refine</td> </tr>
@@ -203,10 +205,11 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   <div class="col-md-6">
     <h3>July 29</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Intro to Python</td> </tr>
+      <tr> <td>09:00</td>  <td>Introduction to Python</td> </tr>
+      <tr> <td>10:15</td>  <td>Break</td> </tr>
       <tr> <td>10:30</td>  <td>Python and APIs</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Python II, More APIs: Scrapy</td> </tr>
+      <tr> <td>13:00</td>  <td>Introduction to Web scraping</td> </tr>
       <tr> <td>14:30</td>  <td>Coffee</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
@@ -258,20 +261,19 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 
 <div class="row">
   <div class="col-md-6">
-    <h3 id="syllabus-regex">Regex</h3>
+    <h3 id="syllabus-regex">Regular Expressions</h3>
     <ul>
-      <li>Files and directories</li>
-      <li>History and tab completion</li>
-      <li>Pipes and redirection</li>
-      <li>Looping over files</li>
-      <li>Creating and running shell scripts</li>
-      <li>Finding things</li>
-      <li><a href="{{site.swc_githubio}}/shell-novice/reference.html">Reference...</a></li>
+      <li>Introduction</li>
+      <li>Basic operators</li>
+      <li>Anchors</li>
+      <li>Quantifiers</li>
+      <li>Practice using https://regex101.com/</li>
+     <!-- <li><a href="{{site.swc_githubio}}/shell-novice/reference.html">Reference...</a></li>-->
     </ul>
   </div>
 
   <div class="col-md-6">
-    <h3 id="syllabus-python">Programming in Python</h3>
+    <h3 id="syllabus-python">Introduction to Python</h3>
     <ul>
       <li>Using libraries</li>
       <li>Working with arrays</li>
@@ -287,12 +289,12 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   <div class="col-md-6">
     <h3 id="syllabus-openrefine">Introduction to OpenRefine</h3>
     <ul>
-      <li>Working with vectors and data frames</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Using R from the command line</li>
-      <li><a href="{{site.swc_githubio}}/r-novice-inflammation/reference.html">Reference...</a></li>
+      <li>Data format conversion</li>
+      <li>Transformations</li>
+      <li>Cluster edit data</li>
+      <li>Reconciliation</li>
+      <li>Templating data</li>
+      <!-- Insert link when ready <li><a href="{{site.swc_githubio}}/insert">Reference...</a></li>-->
     </ul>
   </div>
 
@@ -315,29 +317,22 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   <div class="col-md-6">
     <h3 id="syllabus-xpathxquery">XPath / XQuery</h3>
     <ul>
-      <li>Creating a repository</li>
-      <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
-      <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
-      <li>Ignoring files</li>
-      <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
-      <li>Resolving conflicts</li>
-      <li>Open licenses</li>
-      <li>Where to host work, and why</li>
-      <li><a href="{{site.swc_githubio}}/git-novice/reference.html">Reference...</a></li>
+      <li>Traversing a document</li>
+      <li>Building queries</li>
+      <li>Searching through an XML document</li>
+      <li>Find and replace text</li>
+      <li>Batch editing XML documents</li>
     </ul>
   </div>
   <div class="col-md-6">
-    <h3 id="syllabus-pythonii">Python II: Scrapy API</h3>
+    <h3 id="syllabus-webscraping">Introduction to Web scraping</h3>
     <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="{{site.swc_githubio}}/sql-novice-survey/reference.html">Reference...</a></li>
+      <li>What is web scraping and why it is useful</li>
+	  <li>Scraping manually using browser extensions</li>
+	  <li>Defining what items to extract using XPath</li>
+	  <li>Writing scrapers to crawl a website</li>
+	  <li>Store and reuse extracted items</li>
+	  <li>Do's and Don'ts of web scraping</li>
     </ul>
   </div>
 </div>
@@ -370,13 +365,107 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 </p>
 
 <div id="shell"> <!-- Start of 'shell' section. -->
-  <h3>Regular Expressions (Regex)</h3>
+  <h3>The Bash Shell</h3>
 
   <p>
-     Add stuff here.
+    Bash is a commonly-used shell that gives you the power to do simple
+    tasks more quickly.
   </p>
 
   <div class="row">
+    <div class="col-md-4">
+      <h4 id="shell-windows">Windows</h4>
+      <a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a>
+      <ol>
+        <li>Download the Git for Windows <a href="https://git-for-windows.github.io/">installer</a>.</li>
+        <li>Run the installer and follow the steps bellow:
+          <ol>
+            <!-- Git 2.6.1 Setup -->
+            <!-- Welcome to the Git Setup Wizard -->
+            <li>Click on "Next".</li>
+            <!-- Information -->
+            <li>Click on "Next".</li>
+            <!-- Select Destination Location -->
+            <li>Click on "Next".</li>
+            <!-- Select Components -->
+            <li>Click on "Next".</li>
+            <!-- Select Start Menu Folder -->
+            <li>Click on "Next".</li>
+            <!-- Adjusting your PATH environment -->
+            <li>
+              <strong>
+                Select "Use Git from the Windows Command Prompt" and click on "Next".
+              </strong>
+                If you forgot to do this programs that you need for the workshop will not work properly.
+                If this happens rerun the installer and select the appropriate option.
+            </li>
+            <!-- Configuring the line ending conversions -->
+            <li>
+              Click on "Next".
+              <strong>
+                Keep "Checkout Windows-style, commit Unix-style line endings" selected.
+              </strong>
+            </li>
+            <!-- Configuring the terminal emulator to use with Git Bash -->
+            <li>
+              <strong>
+                Select "Use Windows' default console window" and click on "Next".
+              </strong>
+            </li>
+            <!-- Configuring experimental performance tweaks -->
+            <li>Click on "Next".</li>
+            <!-- Installing -->
+            <!-- Completing the Git Setup Wizard -->
+            <li>Click on "Finish".</li>
+          </ol>
+        </li>
+        <li>
+          If your "HOME" environment variable is not set (or you don't know what this is):
+          <ol>
+            <li>Open command prompt (Open Start Menu then type <code>cmd</code> and press [Enter])</li>
+            <li>
+              Type the following line into the command prompt window exactly as shown:
+              <p><code>setx HOME "%USERPROFILE%"</code></p>
+            </li>
+            <li>Press [Enter], you should see <code>SUCCESS: Specified value was saved.</code></li>
+            <li>Quit command prompt by typing <code>exit</code> then pressing [Enter]</li>
+          </ol>
+        </li>
+      </ol>
+      <p>This will provide you with both Git and Bash in the Git Bash program.</p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="shell-macosx">Mac OS X</h4>
+      <p>
+        The default shell in all versions of Mac OS X is Bash, so no
+        need to install anything.  You access Bash from the Terminal
+        (found in
+        <code>/Applications/Utilities</code>).
+        See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
+        for an example on how to open the Terminal.
+        You may want to keep
+        Terminal in your dock for this workshop.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="shell-linux">Linux</h4>
+      <p>
+        The default shell is usually Bash, but if your
+        machine is set up differently you can run it by opening a
+        terminal and typing <code>bash</code>.  There is no need to
+        install anything.
+      </p>
+    </div>
+  </div>
+</div> <!-- End of 'shell' section. -->
+
+<div id="regex"> <!-- Start of 'regex' section. -->
+  <h3>Regular Expressions (Regex)</h3>
+
+  <p>
+     No installation required -- we will be using a browser-based tool during the workshop.
+  </p>
+<!--<div class="row">
     <div class="col-md-4">
       <h4 id="r-windows">Windows</h4>
       <a href="https://www.youtube.com/watch?v=q0PjTAylwoU">Video Tutorial</a>
@@ -397,39 +486,106 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       </p>
     </div>
   </div>
-</div> <!-- End of 'shell' section. -->
+</div> <!-- End of 'regex' section. -->
 
-<div id='git'> <!-- Start of 'Git' section. GitHub browser compatability
-           is given at https://help.github.com/articles/supported-browsers/-->
-  <h3>BaseX for XPath / XQuery</h3>
+
+<div id='xpath'> <!-- Start of 'Xpath' section. -->
+<!-- Update when have XPath / XQuery installation instructions  -->
+<h3>BaseX for XPath / XQuery</h3>
   <p>
-         Add stuff here.
+
+         <a href="http://basex.org/products/download/">Install BaseX</a>. You may need to <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">install a JDK</a> to get it to run. Once you've installed the program, in your command prompt or terminal type in the command <code>$ basexgui</code> to start the program.
+
   </p>
 
   <div class="row">
     <div class="col-md-4">
       <h4 id="git-windows">Windows</h4>
       <p>
-            Add stuff here.
+            Download the <a href="http://files.basex.org/releases/8.5.2/BaseX852.exe">Windows Installer</a>.
       </p>
     </div>
     <div class="col-md-4">
       <h4 id="git-macosx">Mac OS X</h4>
-           Add stuff here.
+           Install <a href="http://brew.sh/">homebrew</a>.
+           Run <code>$ brew install basex</code>
       </p>
     </div>
     <div class="col-md-4">
       <h4 id="git-linux">Linux</h4>
       <p>
-            Add stuff here.
+            A Linux distribution of basex <a href="https://tracker.debian.org/pkg/basex">is available here</a>.
       </p>
     </div>
-  </div>
-</div> <!-- End of 'Git' section. -->
+  </div> <!-- End of 'Xpath' section. -->
 
-<div id="r"> <!-- Start of 'R' section. -->
+<div id="openrefine"> <!-- Start of 'OpenRefine' section. -->
   <h3>OpenRefine</h3>
 
+  <p>
+    <a href="http://openrefine.org/">OpenRefine</a> (formerly Google Refine) is a powerful tool for working with messy data:
+	cleaning it; transforming it from one format into another; and extending it with web services and external data.
+
+	Please look at the <a href="https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions">Installation Instructions</a>
+	from the OpenRefine project for more details on how to run OpenRefine on your machine. The instructions below are adapted from this link.
+	We will be using <a href="https://github.com/OpenRefine/OpenRefine/releases/tag/2.6-rc.2">version 2.6-rc2</a> during the
+	workshop.
+
+	A <a href="https://www.java.com/en/download/manual.jsp">Java Runtime Environment (JRE)</a> is required to run OpenRefine. If the installation procedure below fails, make sure you have
+	a working JRE installed on your computer.
+  </p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="sql-windows">Windows</h4>
+      <ol>
+        <li><a href="https://github.com/OpenRefine/OpenRefine/releases/download/2.6-rc.2/openrefine-win-2.6-rc.2.zip">Download OpenRefine v. 2.6-rc2 for Windows</a></li>
+		<li>Once you have downloaded the .zip file, uncompress it into a folder wherever you want (such as in C:\Open-Refine).</li>
+		<li>To launch OpenRefine, run the .exe file in that folder. You should see the Command window in which OpenRefine runs.</li>
+		<li>To shut down OpenRefine, press <code>Ctrl-C</code> in the command window that is running OpenRefine. Wait until there's a message that says the shutdown is complete.
+		That window might close automatically, or you can close it yourself. If you get asked, "Terminate all batch processes? Y/N", just press Y.</li>
+      </ol>
+    </div>
+    <div class="col-md-4">
+      <h4 id="sql-macosx">Mac OS X</h4>
+      <ol>
+        <li><a href="https://github.com/OpenRefine/OpenRefine/releases/download/2.6-rc.2/openrefine-mac-2.6-rc.2.dmg">Download OpenRefine v. 2.6-rc2 for Mac</a></li>
+		<li>Once you have downloaded the .dmg file, open it, and drag the OpenRefine icon into the Applications folder.</li>
+		<li>To launch OpenRefine, double-click the OpenRefine app. You'll see the OpenRefine app appear in your dock.</li>
+		<li>If you get an error message preventing you from opening the app because it's from an unidentified developer,
+			do the following (you only have to do it once when you open the app for the first time):
+		<ol>
+			<li>Press the <code>ctrl</code> (Control) key and click on the app icon</li>
+			<li>Choose Open from the shortcut menu</li>
+			<li>There should now be an Open button under the "unidentified developer" error message. Click that button to open the app.</li>
+		</ol></li>
+		<li>To shut down OpenRefine, right-click on its icon in the Dock and choose the <em>Quit</em> option.</li>
+      </ol>
+    </div>
+    <div class="col-md-4">
+      <h4 id="sql-linux">Linux</h4>
+      <ol>
+        <li><a href="https://github.com/OpenRefine/OpenRefine/releases/download/2.6-rc.2/openrefine-linux-2.6-rc.2.tar.gz">Download OpenRefine v. 2.6-rc2 for Linux</a></li>
+		<li>Once you have downloaded the .tar.gz file, uncompress it into a folder wherever you want.</li>
+		<li>To launch OpenRefine, open a shell, navigate to that folder and type <code>./refine</code></li>
+		<li>To shut down OpenRefine, press <code>Ctrl-C</code> in the shell that is running OpenRefine.</li>
+      </ol>
+    </div>
+  </div>
+
+  <h4>Running OpenRefine</h4>
+  <p>
+  OpenRefine is operated from within a web browser (such as Chrome or Firefox).
+  If your browser doesn't open automatically when you start OpenRefine (see above),
+  navigate to <a href="http://127.0.0.1:3333/">http://127.0.0.1:3333/</a> in your favourite browser to open the OpenRefine window.
+  Please note that even though you use a browser to operate OpenRefine, it is still run locally on your machine, and not on the web.
+  </p>
+
+</div> <!-- End of 'OpenRefine' section. -->
+
+<!-- <div id="r">  -->
+<!-- Start of 'R' section. -->
+<!-- Update when have OpenRefine installation instructions   <h3>OpenRefine</h3>
   <p>
     <a href="http://www.r-project.org">R</a> is a programming language
     that is especially powerful for data exploration, visualization, and
@@ -473,7 +629,6 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
     </div>
   </div>
 </div> <!-- End of 'R' section. -->
-
 
 <div id="editor"> <!-- Start of 'editor' section. -->
   <h3>Text Editor</h3>
@@ -625,6 +780,87 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   </p>
 -->
 </div> <!-- End of 'Python' section. -->
+
+<div id='scrapy'> <!-- Start of 'Scrapy' section. -->
+  <h3>Scrapy</h3>
+  <p>
+        In the first part of the Web scraping lesson, we will use a Chrome browser extension to get started with web scraping.
+		Please ensure you have a working copy of the Chrome browser, as well as the
+		<a href="https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd">Scraper extension</a>.
+		We will also use OpenRefine to clean up extracted data.
+  </p>
+  <p>
+		In the second part of the lesson, we will use the Scrapy framework to build a web scraper in Python. This requires
+		a working installation of Python, please refer to the <a href="#python">section on installing Python</a> for details.
+  </p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="git-windows">Windows</h4>
+	 <p>Make sure you have a working copy of <a href="https://www.google.com/chrome/browser/desktop/index.html">the Google Chrome
+		browser</a> on your machine. Install the <a href="https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd">
+		Scraper</a> extension.
+	</p>
+
+	<p>
+		We will also need a command-line tool to run Scrapy. See the <a href="#shell">section on installing GitBash</a>
+		if you haven't done so already.
+		If you already have another shell installed, such as <a href="https://cygwin.com/install.html">Cygwin</a>, this should be fine too.
+	</p>
+
+
+      <p>
+            If you installed Python using Anaconda as <a href="#python">recommended above</a>, do the following:
+			<ol>
+				<li>Open the Anaconda command line tool (or a shell such as GitBash)</li>
+				<li>Run <code>conda install -c scrapinghub scrapy</code>
+			</ol>
+      </p>
+	  <p>If you have another install of Python, you should be able to use the pip package manager to install Scrapy:
+		  <code>pip install Scrapy</code>. If you run into issues, refer to the <a href="http://doc.scrapy.org/en/latest/intro/install.html#intro-install">official Scrapy install guide</a> or get in touch
+		  with <a href="mailto:tom@timtom.ca">Thomas</a> (@timtomch).
+	  </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="git-macosx">Mac OS X</h4>
+	 <p>Make sure you have a working copy of <a href="https://www.google.com/chrome/browser/desktop/index.html">the Google Chrome
+		browser</a> on your machine. Install the <a href="https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd">
+		Scraper</a> extension.
+	</p>
+
+<p>
+             If you installed Python using Anaconda as <a href="#python">recommended above</a>, do the following:
+ 			<ol>
+ 				<li>Open a new Terminal session</li>
+ 				<li>Run <code>conda install scrapy</code>
+ 			</ol>
+       </p>
+ 	  <p>If you have another install of Python, you should be able to use the pip package manager to install Scrapy:
+ 		  <code>pip install Scrapy</code>. If you run into issues, refer to the <a href="http://doc.scrapy.org/en/latest/intro/install.html#intro-install">official Scrapy install guide</a> or get in touch
+ 		  with <a href="mailto:tom@timtom.ca">Thomas</a> (@timtomch).
+ 	  </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="git-linux">Linux</h4>
+
+	 <p>Make sure you have a working copy of <a href="https://www.google.com/chrome/browser/desktop/index.html">the Google Chrome
+		browser</a> on your machine. Install the <a href="https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd">
+		Scraper</a> extension.
+	</p>
+       <p>
+             If you installed Python using Anaconda as <a href="#python">recommended above</a>, do the following:
+ 			<ol>
+ 				<li>Open a new shell</li>
+ 				<li>Run <code>conda install scrapy</code>
+ 			</ol>
+       </p>
+ 	  <p>If you have another install of Python, you should be able to use the pip package manager to install Scrapy:
+ 		  <code>pip install Scrapy</code>. If you run into issues, refer to the <a href="http://doc.scrapy.org/en/latest/intro/install.html#intro-install">official Scrapy install guide</a> or get in touch
+ 		  with <a href="mailto:tom@timtom.ca">Thomas</a> (@timtomch).
+ 	  </p>
+    </div>
+  </div>
+</div> <!-- End of 'Git' section. -->
 
 
 <!--
